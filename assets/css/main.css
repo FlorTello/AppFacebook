@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+header {
+  padding: 14px 42px;
+}
+
+input {
+  margin-right: 14px;
+}
+
+.contenedor-contenido-pagina {
+  margin: 0 auto;
+  padding: 21px;
+  width: 1200px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+input{
+  padding-left: 10px;
+}
+
+.error{
+  font-size: xx-small;
+  color : red;
+}
