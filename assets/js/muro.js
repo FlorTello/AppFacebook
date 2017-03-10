@@ -27,7 +27,7 @@ function createPost(contenido) {
   eliminar.addEventListener('click',function(e) {
     e.preventDefault();
     var postParent = e.target.parent; // Devuelve el padre
-    post.document.removeChild("texto");
+    post.removeChild(texto);
   });
   post.appendChild(texto);
   post.appendChild(editar);
