@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  padding-left: 15px;
+  padding-top: 20px;
 }
 
 *, *:before, *:after {
@@ -46,8 +48,13 @@ input {
 input{
   padding-left: 10px;
 }
-
+textarea{
+  padding-left: 10px;
+}
 .error{
   font-size: xx-small;
   color : red;
+}
+a{
+  font-size: small;
 }

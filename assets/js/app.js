@@ -1,22 +1,24 @@
-var usuarios = [ {email : "flor@gmail.com", password : "12345678"}, 
-				 {email : "naomi@gmail.com", password : "12345678" },
-				 {email : "emma@gmail.com" , password : "12345678"}];
 document.getElementById('login').addEventListener("click",function(event){
-	 event.preventDefault();
+	event.preventDefault();
 	var textUsuario = document.getElementById('textUsuario').value;
 	var clave = document.getElementById('textPassword').value;
-	var error = document.getElementById('errorUsuario');
 	var cont = 0;
 	if(textUsuario == ""){
 		document.getElementById('errorUsuario').innerHTML = "El campo de usuario no puede estar en blanco";
 	}
-	else if(textPassword == ""){
-		document.getElementById('errorPassowrd').innerHTML = "El campo de usuario no puede estar en blanco";	
+	else if(clave == ""){
+		document.getElementById('errorPassword').innerHTML = "El campo de password no puede estar en blanco";	
 	}
 	else{
-		 usuarios.forEach((e) => e.email == textUsuario  && e.password == clave ? cont ++ :cont);
-		 if(cont == 1){
-		 	window.location = "about:_blank";
-	}
+		 usuarios.map((e,i) => e.email == textUsuario  && e.password == clave ? cont = i :cont);
+		 console.log(cont);
+		if(cont >= 0){
+			 sessionStorage.setItem("email" , cont);
+		 	window.location = "muro.html";
+		}
+		else{
+			alert("Usuario O Password Invalido");
+		}
 	}
 });
+

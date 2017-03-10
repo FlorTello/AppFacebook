@@ -8,13 +8,14 @@
 <body>
 <form class = "form-signin " >
 	<label for="usuario">Usuario: </label><br>
-	<input id ="textUsuario" type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Falta agregar dominio" placeholder="Ingrese emil"><br>
+	<input id ="textUsuario" type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Falta agregar dominio" placeholder="Ingrese email"><br>
 	<span  class = "error" id = "errorUsuario"></span><br><br>
 	<label for="password">Password: </label><br>
-	<input id ="textPassword" type="password" required="" minlength="6"><br><br>
-	<span class = "error" id = "errorPassowrd"></span>
+	<input id ="textPassword" type="password" required="" minlength="6" placeholder="Ingrese contraseña"><br>
+	<span class = "error" id = "errorPassword"></span><br><br>
 	<button id ="login" value="Login">Login</button> 
 </form>
 <script src = "assets/js/app.js"></script>
+<script src = "assets/js/usuarios.js"></script>
 </body>
 </html>
